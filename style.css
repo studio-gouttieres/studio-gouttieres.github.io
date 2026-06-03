@@ -1,0 +1,115 @@
+:root {
+            --primary: #b00000;
+            --text: #5a2a2a;
+            --bg: #faf8f6;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: var(--bg);
+            color: var(--text);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            color: var(--primary);
+            margin-bottom: .5rem;
+        }
+
+        .subtitle {
+            color: var(--primary);
+            font-weight: bold;
+            margin-bottom: 2rem;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        .hero {
+            margin-bottom: 2rem;
+        }
+
+        .content p {
+            margin-bottom: 1rem;
+        }
+
+        .cta {
+            text-align: center;
+            margin: 3rem 0;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: .8rem 1.5rem;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background .2s;
+        }
+
+        .cta a:hover {
+            background: #8a0000;
+        }
+
+        .gallery {
+            margin-top: 2rem;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            color: #777;
+            font-size: .9rem;
+        }
+
+        .lang-switcher {
+            display: flex;
+            justify-content: flex-end;
+            gap: .4rem;
+            margin-bottom: 1rem;
+        }
+
+        .lang-switcher a {
+            display: inline-block;
+            padding: .25rem .6rem;
+            border: 1.5px solid var(--primary);
+            border-radius: 4px;
+            color: var(--primary);
+            text-decoration: none;
+            font-size: .85rem;
+            font-weight: bold;
+            letter-spacing: .05em;
+            transition: background .15s, color .15s;
+        }
+
+        .lang-switcher a:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        .lang-switcher a.active {
+            background: var(--primary);
+            color: white;
+            pointer-events: none;
+        }
